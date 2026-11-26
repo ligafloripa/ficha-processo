@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Ficha Mapeie um Processo</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="style.css">
+</head><body>
+<header class="top"><div class="in">
+  <img alt="Liga Floripa" src="logo.png">
+  <h1>Mapeie um processo</h1>
+  <p>Os 4 pilares para empreender com foco em resultados · Processos</p>
+</div></header>
+<main>
+  <p class="lead">Escrever o que você já faz é mapear um processo.</p>
+  <div>
+    <label class="lab" for="nome">Seu nome (opcional)</label>
+    <input type="text" id="nome" autocomplete="name">
+  </div>
+  <div>
+    <label class="lab" for="tarefa">Tarefa</label>
+    <p class="hint">Escolha a que mais se repete no seu negócio. Ex.: atender um cliente novo.</p>
+    <textarea id="tarefa" rows="2"></textarea>
+  </div>
+  <div class="steps">
+    <div class="step"><div class="num">1</div><div><label class="lab" for="p1">Primeiro passo</label><textarea id="p1"></textarea></div></div>
+    <div class="step"><div class="num">2</div><div><label class="lab" for="p2">Segundo passo</label><textarea id="p2"></textarea></div></div>
+    <div class="step"><div class="num">3</div><div><label class="lab" for="p3">Terceiro passo</label><textarea id="p3"></textarea></div></div>
+  </div>
+  <div>
+    <label class="lab" for="quem">Quem executa hoje?</label>
+    <textarea id="quem" rows="2" style="min-height:64px"></textarea>
+  </div>
+  <p class="foot">Em fevereiro vamos mostrar como mapear todos os seus processos. Depois de mapeado, você sabe o passo de cada execução e pode colocar tecnologia, IA ou pessoas para fazer.</p>
+  <div class="actions">
+    <button id="gerar" type="button">Gerar minha ficha</button>
+    <button id="limpar" type="button" class="alt">Limpar campos</button>
+    <p class="msg" id="msg" role="status" aria-live="polite"></p>
+  </div>
+  <div class="prev" id="prev">
+    <p class="hint">Sua ficha está pronta. Segure a imagem para salvar na galeria ou tire um print da tela.</p>
+    <img id="previmg" alt="Ficha preenchida">
+  </div>
+  <p class="small">Seu texto fica só neste aparelho. A Liga Floripa não recebe o que você escreve.</p>
+</main>
+<script src="app.js"></script>
+</body></html>
